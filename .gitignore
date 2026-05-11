@@ -5,6 +5,10 @@ log
 .claude
 CLAUDE.md
 
+# Data files (large; provide locally via config paths)
+lob.csv
+trades.csv
+
 
 ### C++ ###
 # Prerequisites

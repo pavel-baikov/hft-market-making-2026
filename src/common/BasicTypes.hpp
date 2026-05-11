@@ -1,4 +1,4 @@
-// defines basic types used throught the code
+// defines basic types used throughout the code
 
 #pragma once
 
