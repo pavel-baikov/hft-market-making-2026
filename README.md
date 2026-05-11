@@ -83,6 +83,25 @@ HFT market-making app:
 build/bin/hft-market-making
 ```
 
+## Experiments
+
+The backtester ships with three configs in `config/`. Place `lob.csv` and `trades.csv` in the
+working directory (or update the `lob_path` / `trade_path` entries), then run:
+
+```bash
+# Vanilla Avellaneda-Stoikov (2008)
+build/bin/hft-market-making config/baseline_as2008.conf
+
+# Microprice-enhanced AS
+build/bin/hft-market-making config/microprice_extension.conf
+```
+
+Each run writes a Markdown performance report to `reports/`. Pre-generated results and a
+side-by-side comparison of both strategies are in `reports/EXPERIMENTS.md`.
+
+For a full description of the engine design, strategy model, formula derivation, and
+configuration reference see `docs/TECHNICAL.md`.
+
 ## Contributing
 
 Install UV, create a virtual environment, and install the project dependencies:
